@@ -6,3 +6,4 @@ Vanilla JavaScript Task dealing with:
 - CRUD operation,
 - forms, validation,
 - objects and table for displaying
+- Realtime search
