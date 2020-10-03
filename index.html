@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container py-0">
+            <a class="navbar-brand font-weight-bold text-white" href="#">Barakat.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-capitalize" href="#header">Header <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-capitalize" href="#popup">Popup Slider</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-capitalize" href="#form">Form & Validation</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-capitalize" href="#table">Table</a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="vh-100" id="header">
+        <div class="overlay d-flex align-items-center justify-content-center text-center">
+            <div class="header-content text-white">
+                <h5>I'm</h5>
+                <h1 class="py-1">Mohammed Barakat</h1>
+                <span class="element"></span><br>
+            </div>
+        </div>
+        <div class="scroll rounded-pill">
+        </div>
+    </header>
+
+    <section class="section-carousel" id="popup">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="item position-relative">
+                        <img src="images/portfolio-1.jpg" alt="" class="img-fluid img-item">
+                        <div class="item-caption position-absolute bg-white px-2">
+                            <h3>Item #</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item position-relative">
+                        <img src="images/portfolio-2.jpg" alt="" class="img-fluid img-item">
+                        <div class="item-caption position-absolute bg-white px-2">
+                            <h3>Item #</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item position-relative">
+                        <img src="images/portfolio-3.jpg" alt="" class="img-fluid img-item">
+                        <div class="item-caption position-absolute bg-white px-2">
+                            <h3>Item #</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item position-relative">
+                        <img src="images/portfolio-2.jpg" alt="" class="img-fluid img-item">
+                        <div class="item-caption position-absolute bg-white px-2">
+                            <h3>Item #</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item position-relative">
+                        <img src="images/portfolio-1.jpg" alt="" class="img-fluid img-item">
+                        <div class="item-caption position-absolute bg-white px-2">
+                            <h3>Item #</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item position-relative">
+                        <img src="images/portfolio-3.jpg" alt="" class="img-fluid img-item">
+                        <div class="item-caption position-absolute bg-white px-2">
+                            <h3>Item #</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="lightboxContainer">
+        <div id="lightboxItem">
+            <span id="prev"><i class="far fa-arrow-alt-circle-left"></i></span>
+            <span id="close"><i class="far fa-times-circle"></i></span>
+            <span id="next"><i class="far fa-arrow-alt-circle-right"></i></span>
+        </div>
+    </div>
+
+    <section class="section-form" id="form">
+        <div class="container">
+        <div class="form mx-auto w-75">
+            <div class="form-group pb-4">
+                <input type="text" class="field form-control" id="siteName" required>
+                <label for="siteName"><span>Site Name</span></label>
+            </div>
+            <div class="form-group pb-4">
+                <input type="text" class="field form-control" id="siteURL" required>
+                <label for="siteURL"><span>Site URL</span></label>
+            </div>
+            <button class="btn btn-success" id="addSite">Add Site</button>
+        </div>
+    </div>
+    </section>
+    <section class="site-data" id="table">
+        <div class="form mx-auto w-50">
+            <div class="form-group shadow">
+                <input type="text" class="field form-control" id="searchInput" required>
+                <label for="searchInput"><span>Search site</span></label>
+            </div>
+        </div>
+        <div class="container table-responsive">
+            <table class="table table-striped table-dark table-hover shadow">
+                <thead>
+                    <th style="width: 5%;">index</th>
+                    <th style="width: 20%;">Site Name</th>
+                    <th style="width: 30%;">Site URL</th>
+                    <th style="width: 10%;">Visit</th>
+                    <th style="width: 10%;">Update</th>
+                    <th style="width: 10%;">Delete</th>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+            <h1 class="text-center m-5 d-block" id="emptyTable">Your Table is Empty</h1>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

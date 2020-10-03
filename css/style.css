@@ -1,0 +1,161 @@
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+header {
+  background-image: url(../images/header-bg-min.JPG);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+h1 {
+  font-size: 3.5rem;
+}
+.header-content h5 {
+  font-size: 2rem;
+}
+.element {
+  font-size: 2rem;
+}
+.typed-cursor {
+  font-size: 2rem;
+}
+.navbar{
+position:fixed;
+left:0;
+right:0;
+top:0;
+z-index:9999;
+<- background-color: #c3c3c3 !important; -->
+}
+.navbar-nav .nav-item .nav-link {
+  font-size: 1.2rem;
+color:white;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: cyan;
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+.scroll {
+  position: relative;
+  width: 40px;
+  height: 60px;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px white solid;
+  animation: move 3s alternate infinite;
+}
+.scroll::after {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: white;
+}
+@keyframes move {
+  0% {
+    bottom: 15%;
+  }
+  25% {
+    bottom: 20%;
+  }
+  50% {
+    bottom: 25%;
+  }
+  75% {
+    bottom: 20%;
+  }
+  100% {
+    bottom: 15%;
+  }
+}
+.item {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.item-caption {
+  bottom: 1rem;
+  width: 80%;
+}
+#lightboxContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#lightboxItem{
+  position: relative;
+  background-image: url(../images/portfolio-2.jpg);
+  background-size: 100% 100%;
+  width: 40%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#lightboxItem span{
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.section-form,
+.site-data{
+  background-image: url(../images/light_dot.jpg);
+}
+
+input{
+  font-family: 'Ubuntu', sans-serif;
+  /* margin: 0px; */
+}
+.form label span {
+  font-family: 'Ubuntu', sans-serif;
+  display: inline;
+  margin: 10px;
+  padding: 15px 20px;
+  border: none;
+}
+
+/* Underline and Placeholder */
+input.field + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+}
+input.field:focus + label > span,
+input.field:valid + label > span {
+  top: -80px;
+  color: #333;
+  padding: 0px;
+  transition: 0.5s;
+}
+input.field + label > span{
+  position: absolute;
+  color: #8F8F8F;
+  top: -55px;
+}
